@@ -1,0 +1,308 @@
+@import url(http://fonts.googleapis.com/css?family=Abel|Satisfy);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Petit+Formal+Script|Archivo+Narrow);
+
+
+/*Likovi */
+.container {
+  position: relative;
+  width: 20%;
+  float:left;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* Galerija */
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* Završetak galerije */
+
+
+
+/* Style */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #DEDEDE url(images/img01.png) repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #8A8A8A;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+p {
+	line-height: 180%;
+}
+
+a {
+	color: #D1551F;
+}
+
+strong {
+	font-weight: 700;
+	color: #2A2A2A;
+}
+
+/* Copyright */
+
+#copyright {
+	overflow: hidden;
+	padding: 50px 0px;
+	border-top: 1px solid #E8E8E3;
+}
+
+#copyright p {
+	text-align: center;
+	font-family: 'Abel', sans-serif;
+	font-size: 11pt;
+	color: #999999;
+}
+
+#copyright a {
+	color: #858585;
+}
+
+#copyright a:hover {
+	text-decoration: none;
+}
+
+/** LIST STYLE 1 */
+
+ul.style1 {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+}
+
+ul.style1 li {
+	padding: 15px 0px 15px 0px;
+	border-top: 1px solid #E6E6E6;
+	line-height: 160%;
+}
+
+ul.style1 a {
+	display: block;
+	padding: 0px 0px 0px 0px;
+	text-decoration: none;
+	color: #525252;
+}
+
+ul.style1 a:hover {
+	text-decoration: underline;
+}
+
+ul.style1 .first {
+	border-top: none;
+	padding-top: 0px;
+}
+
+/** LIST STYLE 3 */
+
+ul.style3 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.style3 li {
+	padding: 20px 0px 25px 0px;
+	border-top: 1px solid #E7E5DA;
+}
+
+ul.style3 a {
+	display: block;
+	text-decoration: none;
+	color: #525252;
+}
+
+ul.style3 a:hover {
+	text-decoration: underline;
+}
+
+ul.style3 .date {
+	width: 100px;
+	margin: 0px 0px 20px 0px;
+	padding: 7px 0px 7px 0px;
+	background: #CEC3A0;
+	border-radius: 5px;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #8A8B71;
+	font-family: 'Abel', sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+ul.style3 .date b {
+}
+
+ul.style3 .date a {
+	color: #FFFFFF;
+}
+
+ul.style3 .date a:hover {
+	text-decoration: none;
+}
+
+ul.style3 .first {
+	padding-top: 0px;
+	border-top: none;
+}
+
+/** BUTTON STYLE */
+
+.button-style {
+	margin: 20px 0px 20px 0px;
+}
+
+.button-style a {
+	padding: 7px 20px 7px 20px;
+	background: #f6f4ee;
+	border-radius: 5px;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #8A8B71;
+	font-family: 'Abel', sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
